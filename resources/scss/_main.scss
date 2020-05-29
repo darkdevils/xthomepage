@@ -271,12 +271,8 @@
                   height: 100%;
                   font-size: 1.25em;
                   p {
-                    display: inline-block;
-                    min-width: 50%;
+                    display: block;
                     margin: 0 0 0.25em;
-                    padding: 1em;
-                    background: rgba(0,0,0,0.9);
-                    color: #fff;
                     text-transform: none;
                     font-weight: 500;
                     font-size: 0.7292vw;
@@ -294,13 +290,19 @@
                       -webkit-transition-delay: 0.1s;
                       transition-delay: 0.1s;
                     }
+                    span {
+                      display: inline-block;
+                      background: rgba(0,0,0,0.7);
+                      color: #fff;
+                      padding: 1em;
+                    }
                   }
                 }
                 &:hover div {
                   p {
                     opacity: 1;
-                    -webkit-transform: translate3d(-50px,100px,0);
-                    transform: translate3d(-50px,100px,0);
+                    -webkit-transform: translate3d(100px,100px,0);
+                    transform: translate3d(100px,100px,0);
                   }
                 }
               }
