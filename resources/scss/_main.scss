@@ -1,13 +1,59 @@
 @charset "utf-8";
+@mixin solid-line($width, $color) {
+  border: $width solid $color;
+}
+
 .wrapper {
   .header {
     &.main {
       .xt-ci {
-        background: url(../images/main/logo.png) no-repeat 0 0;
-        border-right: 3px solid #fff;
+        width: auto;
+        min-width: 82px;
+        border: 3px solid #fff;
+        background: url(../images/main/logo-white.png) no-repeat 0 0;
       }
       .pdf-down {
         color: #fff;
+      }
+    }
+    &.txt-bk {
+      .xt-ci {
+        width: auto;
+        min-width: 82px;
+        border: 3px solid #000;
+        background: url(../images/main/logo-black.png) no-repeat 0 0;
+      }
+      .pdf-down {
+        color: #000;
+      }
+      .hamburger {
+        a {
+          div {
+            &.side-open {
+              opacity: 1;
+              @include solid-line(3px, #000);
+              span {
+                color: #000;
+              }
+            }
+            &.side-close {
+              @include solid-line(3px, #000);
+            }
+          }
+          &.on {
+            div {
+              transition-property: opacity;
+              transition-duration: 0.3s;
+              transition-delay: 0.3s;
+              &.side-open {
+                opacity: 0;
+              }
+              &.side-close {
+                opacity: 1;
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -215,9 +215,8 @@
         </div>
       </section>
       <!-- // Contact XT -->
-      <div id="mask"></div>
     </div>
-
+    <div id="mask"></div>
 
     <div class="footer">
       <p class="copy">© 2020 XT Inc.Rights Reserved.</p>
@@ -268,7 +267,13 @@
         } else if(sliding) {
           return false;
         }
+        if(index == 2 || index == 4) {
+          $(".header").removeClass("main").addClass("txt-bk");
+        } else {
+          $(".header").addClass("main").removeClass("txt-bk");
+        }
       },
+
       afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
         sliding = false;
         $("#section2 .changeNum").text(slideIndex + 1);
