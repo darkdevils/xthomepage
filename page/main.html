@@ -242,19 +242,9 @@
       offset: 120,*/
       easing: 'ease-in-out-sine',
     });
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-        mousewheelControl: true,
-      },
-    });
-    $(window).resize(function () {
-      $(".swiper-slide").css("width", $(window).width());
-    });
+
     var slideIndex  = 1, sliding     = false;
     var length = $("#section2 .slide").length;
-
 
     $("#section2 .totalNum").text(length);
 
@@ -291,6 +281,7 @@
       horizontalOrder: true,
       percentPosition: true,
     });
+
   });
 </script>
 </body>
