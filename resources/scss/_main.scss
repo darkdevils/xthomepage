@@ -143,10 +143,10 @@
             h2 {
               position: absolute;
               top: 32%;
-              padding-left: 125px;
+              padding-left: 6.5104vw;
               display: block;
               color: #fff;
-              font-size: 120px;
+              font-size: 6.2500vw;
               font-weight: 500;
               text-align: left;
               line-height: 1;
@@ -154,10 +154,10 @@
                 position: relative;
                 display: inline-block;
                 color: #fff;
-                font-size: 60px;
+                font-size: 3.1250vw;
                 font-weight: 400;
                 vertical-align: top;
-                padding: 15px 0;
+                padding: 0.7813vw 0;
                 border-bottom: 3px solid #fff;
                 &:after {
                   content: "";
@@ -173,7 +173,7 @@
             div {
               position: absolute;
               top: 62%;
-              padding-left: 300px;
+              padding-left: 15.6250vw;
               display: block;
               color: #fff;
               text-align: left;
@@ -347,13 +347,13 @@
           z-index: 1;
           span.bar-txt {
             color: #fff;
-            font-size: 50px;
+            font-size: 2.6042vw;
             font-weight: 700;
             line-height: 2;
             margin: 35px 0 10px;
             span {
               color: #fff;
-              font-size: 50px;
+              font-size: 2.6042vw;
               font-weight: 700;
             }
             &:before {
