@@ -4200,7 +4200,9 @@ a.content__text-link[data-fx="14"]:hover::after {
     pointer-events: none;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 'title links' '... ...' '... github'; }
+    grid-template-areas: 'title links'
+ '... ...'
+ '... github'; }
   .frame__title {
     grid-area: title;
     padding: 0; }
